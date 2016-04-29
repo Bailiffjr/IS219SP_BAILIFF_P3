@@ -106,12 +106,23 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
+	function like(index){
+	movies[index].likes += 1;	
+	}	
 	
+	function dislike(index){
+	movies[index].dislikes += 1;	
+	}
 	
+	function posterClick(index){
+	movies[index].posterindex += 1;	
+	}
 	
-	
-	
+	function timeText(minutes){
+	var hours = minutes / 60;
+	minutes = minutes % 60;
+	return hours + "h " + minutes + "m"
+	}
 	
 	
 	

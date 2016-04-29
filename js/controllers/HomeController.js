@@ -106,7 +106,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-	function likes(index){
+	function like(index){
 	movies[index].likes += 1;	
 	}	
 	

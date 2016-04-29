@@ -111,7 +111,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	}	
 	
 	function dislike(index){
-	movies[index].dislikes += 1;	
+	movies[index].dislikes ++;	
 	}
 	
 	function posterClick(index){

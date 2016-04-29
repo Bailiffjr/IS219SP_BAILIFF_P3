@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="IS219Gallery">
 <head>
 	<title>IS219 Gallery (Project 3)</title>
 
@@ -20,9 +20,9 @@
 	
 </head>
 
-  <body ng-app = "IS219Gallery">
+  <body ng-controller="HomeController">
 	  
-    <div ng-controller="HomeController" class="header">
+    <div  class="header">
 	    
       <div class="container">
         <h1 id="app_title">{{title}}</h1>
@@ -30,7 +30,7 @@
       
     </div>
 
-    <div ng-controller="HomeController" class="main">
+    <div class="main">
      
 			
       <div class="container">
@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <div ng-controller="HomeController" class="footer">
+    <div class="footer">
       <div class="container">
 		<a id="github" class="btn btn-lg btn-warning">
 			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> {{owner}} {{github}}

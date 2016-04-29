@@ -107,11 +107,11 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 	$scope.like = function(index){
-	movies[index].likes ++;;	
+	$scope.movies[index].likes ++;;	
 	}	
 	
 	function dislike(index){
-	movies[index].dislikes ++;	
+	$scope.movies[index].dislikes ++;	
 	}
 	
 	function posterClick(index){
